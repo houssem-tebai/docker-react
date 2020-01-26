@@ -10,6 +10,6 @@ deploy:
         username: "$AZURE_USERNAME"
         password:
                 secure: "$AZURE_PASSWD"
-        site: https://docker-r.azurewebsites.net
+        site: docker-r.azurewebsites.net
         on:
                 branch: master
