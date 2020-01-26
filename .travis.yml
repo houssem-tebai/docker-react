@@ -11,5 +11,6 @@ deploy:
         password:
                 secure: "$AZURE_PASSWD"
         site: docker-r
+        verbos: true
         on:
                 branch: master
