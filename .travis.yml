@@ -13,5 +13,5 @@ deploy:
         site: docker-r.azurewebsites.net
         verbos: true
         skip_cleanup: true
-        on:
-                branch: master
+on:
+        branch: master
