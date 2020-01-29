@@ -6,12 +6,14 @@ before_install:
 script:
         - docker run -e CI=true houssem/docker-react npm run test -- --coverage
 deploy:
-        provider: azure_web_apps
-        username: "$AZURE_USERNAME"
-        password:
-                secure: "$AZURE_PASSWD"
-        site: docker-r.azurewebsites.net
-        verbos: true
-        skip_cleanup: true
-on:
-        branch: master
+        provider: elasticbeanstalk
+        region: "us-east-2"
+        app: "DockerReact"
+        env: "DockerReact-env"
+        bucket_name: "elasticbeanstalk-us-east-2-518268222591"
+        bucket_path: "DockerReact"
+        on:
+                branch: master
+        access_key_id: "$ACCESS_KEY_ID"
+        secret_access_key:
+                secure: "$SECRET_ACCESS_KEY"
