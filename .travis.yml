@@ -8,10 +8,10 @@ script:
 deploy:
         provider: elasticbeanstalk
         region: "us-east-2"
-        app: "docker-react"
-        env: "DockerReact-env"
-        bucket_name: "elasticbeanstalk-us-east-2-518268222591"
-        bucket_path: "docker-react"
+        app: "merihen-webservice"
+        env: "MerihenWebservice-env"
+        bucket_name: "elasticbeanstalk-us-east-1-518268222591"
+        bucket_path: "merihen-webservice"
         on:
                 branch: master
         access_key_id: "$ACCESS_KEY_ID"
