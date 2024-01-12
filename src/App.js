@@ -8,11 +8,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          hello from AWS
+          hello from iTeam
         </p>
         <a
           className="App-link"
-          href="https://merhien-webservice.azurewebsites.net/"
+          href="https://iteam-intranet.tn/"
           target="_blank"
           rel="noopener noreferrer"
         >
