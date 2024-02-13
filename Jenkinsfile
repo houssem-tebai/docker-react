@@ -15,18 +15,13 @@ pipeline {
         stage ("image build") {
             steps {
                 echo 'building docker image'
-                sh "docker build -t houssemtebai/webapp:${commit_id} ."
+                sh "docker build -t webapp:${commit_id} ."
                 echo 'docker image built'
-            }
-        }
-        stage ('Image Push') {
-            steps {
-                sh "docker push houssemtebai/webapp:${commit_id}"
             }
         }
         stage('deploy') {
             steps {
-                sh "docker run houssemtebai/webapp:${commit_id}"
+                sh "docker run webapp:${commit_id}"
             }
         }
     }
