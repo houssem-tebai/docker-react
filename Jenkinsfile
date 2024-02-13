@@ -21,7 +21,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh "docker run webapp:${commit_id}"
+                sh "docker run -d -p 80:80 webapp:${commit_id}"
             }
         }
     }
