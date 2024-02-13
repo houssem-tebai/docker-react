@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          hello from Master branch
+          hello from container
         </p>
         <a
           className="App-link"
